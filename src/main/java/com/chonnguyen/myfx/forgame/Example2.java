@@ -41,7 +41,7 @@ public class Example2 extends Application
         gc.fillText( "Hello, World!", 60, 50 );
         gc.strokeText( "Hello, World!", 60, 50 );
         
-        Image earth = new Image( "earth.png" );
+        Image earth = new Image( "/graphics/forgame/earth.png" );
         gc.drawImage( earth, 180, 100 );
         
         theStage.show();

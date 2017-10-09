@@ -99,7 +99,7 @@ public class LayoutSampleCSS extends Application {
 
         Scene scene = new Scene(border);
 // Add a style sheet to the scene        
-        scene.getStylesheets().add("/resources/layoutstyles.css");
+        scene.getStylesheets().add("/layoutstyles.css");
         stage.setScene(scene);
         stage.setTitle("Layout Sample");
         stage.show();
@@ -221,7 +221,7 @@ public class LayoutSampleCSS extends Application {
         
         // House icon in column 1, rows 1-2
         ImageView imageHouse = new ImageView(
-                    new Image(LayoutSampleCSS.class.getResourceAsStream("/resources/graphics/house.png")));
+                    new Image(LayoutSampleCSS.class.getResourceAsStream("/graphics/house.png")));
         grid.add(imageHouse, 0, 0, 1, 2);
 
         // Left label in column 1 (bottom), row 3
@@ -231,7 +231,7 @@ public class LayoutSampleCSS extends Application {
         
         // Chart in columns 2-3, row 3
         ImageView imageChart = new ImageView(
-                    new Image(LayoutSampleCSS.class.getResourceAsStream("/resources/graphics/piechart.png")));
+                    new Image(LayoutSampleCSS.class.getResourceAsStream("/graphics/piechart.png")));
         grid.add(imageChart, 1, 2, 2, 1);
         
         // Right label in column 4 (top), row 3
@@ -261,7 +261,7 @@ public class LayoutSampleCSS extends Application {
         for (int i=0; i<8; i++) {
             pages[i] = new ImageView(
                     new Image(LayoutSampleCSS.class.getResourceAsStream(
-                    "/resources/graphics/chart_"+(i+1)+".png")));
+                    "/graphics/chart_"+(i+1)+".png")));
             flow.getChildren().add(pages[i]);
         }
 
@@ -286,7 +286,7 @@ public class LayoutSampleCSS extends Application {
         for (int i=0; i<8; i++) {
             pages[i] = new ImageView(
                     new Image(LayoutSampleCSS.class.getResourceAsStream(
-                    "/resources/graphics/chart_"+(i+1)+".png")));
+                    "/graphics/chart_"+(i+1)+".png")));
             tile.getChildren().add(pages[i]);
         }
 

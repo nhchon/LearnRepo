@@ -36,14 +36,14 @@ public class Example3AI extends Application
 
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
-        Image earth = new Image( "earth.png" );
-        Image sun   = new Image( "sun.png" );
-        Image space = new Image( "space.png" );
+        Image earth = new Image( "/graphics/forgame/earth.png" );
+        Image sun   = new Image( "/graphics/forgame/sun.png" );
+        Image space = new Image( "/graphics/forgame/space.png" );
 
         AnimatedImage ufo = new AnimatedImage();
         Image[] imageArray = new Image[6];
         for (int i = 0; i < 6; i++)
-            imageArray[i] = new Image( "ufo_" + i + ".png" );
+            imageArray[i] = new Image( "/graphics/forgame/ufo_" + i + ".png" );
         ufo.frames = imageArray;
         ufo.duration = 0.100;
 

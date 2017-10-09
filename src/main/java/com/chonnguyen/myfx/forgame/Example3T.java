@@ -39,9 +39,9 @@ public class Example3T extends Application
         
         GraphicsContext gc = canvas.getGraphicsContext2D();
         
-        Image earth = new Image( "earth.png" );
-        Image sun   = new Image( "sun.png" );
-        Image space = new Image( "space.png" );
+        Image earth = new Image( "/graphics/forgame/earth.png" );
+        Image sun   = new Image( "/graphics/forgame/sun.png" );
+        Image space = new Image( "/graphics/forgame/space.png" );
         
         Timeline gameLoop = new Timeline();
         gameLoop.setCycleCount( Timeline.INDEFINITE );
